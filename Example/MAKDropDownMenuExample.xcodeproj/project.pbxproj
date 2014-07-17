@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0768243D1977D5CF00AB43D4 /* MAKDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0768243C1977D5CF00AB43D4 /* MAKDropDownMenu.m */; };
+		07AEFCB91977D59400633162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEFCB81977D59400633162 /* Foundation.framework */; };
+		07AEFCBB1977D59400633162 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEFCBA1977D59400633162 /* CoreGraphics.framework */; };
+		07AEFCBD1977D59400633162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEFCBC1977D59400633162 /* UIKit.framework */; };
+		07AEFCC31977D59400633162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07AEFCC11977D59400633162 /* InfoPlist.strings */; };
+		07AEFCC51977D59400633162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AEFCC41977D59400633162 /* main.m */; };
+		07AEFCC91977D59400633162 /* MAKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AEFCC81977D59400633162 /* MAKAppDelegate.m */; };
+		07AEFCCC1977D59400633162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07AEFCCA1977D59400633162 /* Main.storyboard */; };
+		07AEFCCF1977D59400633162 /* MAKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AEFCCE1977D59400633162 /* MAKViewController.m */; };
+		07AEFCD11977D59400633162 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07AEFCD01977D59400633162 /* Images.xcassets */; };
+		07AEFCD81977D59400633162 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEFCD71977D59400633162 /* XCTest.framework */; };
+		07AEFCD91977D59400633162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEFCB81977D59400633162 /* Foundation.framework */; };
+		07AEFCDA1977D59400633162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEFCBC1977D59400633162 /* UIKit.framework */; };
+		07AEFCE21977D59400633162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07AEFCE01977D59400633162 /* InfoPlist.strings */; };
+		07AEFCE41977D59400633162 /* MAKDropDownMenuExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AEFCE31977D59400633162 /* MAKDropDownMenuExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07AEFCDB1977D59400633162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07AEFCAD1977D59400633162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07AEFCB41977D59400633162;
+			remoteInfo = MAKDropDownMenuExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0768243B1977D5CF00AB43D4 /* MAKDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAKDropDownMenu.h; path = ../../MAKDropDownMenu.h; sourceTree = "<group>"; };
+		0768243C1977D5CF00AB43D4 /* MAKDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAKDropDownMenu.m; path = ../../MAKDropDownMenu.m; sourceTree = "<group>"; };
+		07AEFCB51977D59400633162 /* MAKDropDownMenuExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAKDropDownMenuExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AEFCB81977D59400633162 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07AEFCBA1977D59400633162 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07AEFCBC1977D59400633162 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07AEFCC01977D59400633162 /* MAKDropDownMenuExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MAKDropDownMenuExample-Info.plist"; sourceTree = "<group>"; };
+		07AEFCC21977D59400633162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07AEFCC41977D59400633162 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07AEFCC61977D59400633162 /* MAKDropDownMenuExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MAKDropDownMenuExample-Prefix.pch"; sourceTree = "<group>"; };
+		07AEFCC71977D59400633162 /* MAKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAKAppDelegate.h; sourceTree = "<group>"; };
+		07AEFCC81977D59400633162 /* MAKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAKAppDelegate.m; sourceTree = "<group>"; };
+		07AEFCCB1977D59400633162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07AEFCCD1977D59400633162 /* MAKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MAKViewController.h; sourceTree = "<group>"; };
+		07AEFCCE1977D59400633162 /* MAKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAKViewController.m; sourceTree = "<group>"; };
+		07AEFCD01977D59400633162 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07AEFCD61977D59400633162 /* MAKDropDownMenuExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAKDropDownMenuExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07AEFCD71977D59400633162 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		07AEFCDF1977D59400633162 /* MAKDropDownMenuExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MAKDropDownMenuExampleTests-Info.plist"; sourceTree = "<group>"; };
+		07AEFCE11977D59400633162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07AEFCE31977D59400633162 /* MAKDropDownMenuExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAKDropDownMenuExampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07AEFCB21977D59400633162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AEFCBB1977D59400633162 /* CoreGraphics.framework in Frameworks */,
+				07AEFCBD1977D59400633162 /* UIKit.framework in Frameworks */,
+				07AEFCB91977D59400633162 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AEFCD31977D59400633162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AEFCD81977D59400633162 /* XCTest.framework in Frameworks */,
+				07AEFCDA1977D59400633162 /* UIKit.framework in Frameworks */,
+				07AEFCD91977D59400633162 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07AEFCAC1977D59400633162 = {
+			isa = PBXGroup;
+			children = (
+				07AEFCBE1977D59400633162 /* MAKDropDownMenuExample */,
+				07AEFCDD1977D59400633162 /* MAKDropDownMenuExampleTests */,
+				07AEFCB71977D59400633162 /* Frameworks */,
+				07AEFCB61977D59400633162 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07AEFCB61977D59400633162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07AEFCB51977D59400633162 /* MAKDropDownMenuExample.app */,
+				07AEFCD61977D59400633162 /* MAKDropDownMenuExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07AEFCB71977D59400633162 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07AEFCB81977D59400633162 /* Foundation.framework */,
+				07AEFCBA1977D59400633162 /* CoreGraphics.framework */,
+				07AEFCBC1977D59400633162 /* UIKit.framework */,
+				07AEFCD71977D59400633162 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07AEFCBE1977D59400633162 /* MAKDropDownMenuExample */ = {
+			isa = PBXGroup;
+			children = (
+				0768243B1977D5CF00AB43D4 /* MAKDropDownMenu.h */,
+				0768243C1977D5CF00AB43D4 /* MAKDropDownMenu.m */,
+				07AEFCC71977D59400633162 /* MAKAppDelegate.h */,
+				07AEFCC81977D59400633162 /* MAKAppDelegate.m */,
+				07AEFCCA1977D59400633162 /* Main.storyboard */,
+				07AEFCCD1977D59400633162 /* MAKViewController.h */,
+				07AEFCCE1977D59400633162 /* MAKViewController.m */,
+				07AEFCD01977D59400633162 /* Images.xcassets */,
+				07AEFCBF1977D59400633162 /* Supporting Files */,
+			);
+			path = MAKDropDownMenuExample;
+			sourceTree = "<group>";
+		};
+		07AEFCBF1977D59400633162 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AEFCC01977D59400633162 /* MAKDropDownMenuExample-Info.plist */,
+				07AEFCC11977D59400633162 /* InfoPlist.strings */,
+				07AEFCC41977D59400633162 /* main.m */,
+				07AEFCC61977D59400633162 /* MAKDropDownMenuExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07AEFCDD1977D59400633162 /* MAKDropDownMenuExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				07AEFCE31977D59400633162 /* MAKDropDownMenuExampleTests.m */,
+				07AEFCDE1977D59400633162 /* Supporting Files */,
+			);
+			path = MAKDropDownMenuExampleTests;
+			sourceTree = "<group>";
+		};
+		07AEFCDE1977D59400633162 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07AEFCDF1977D59400633162 /* MAKDropDownMenuExampleTests-Info.plist */,
+				07AEFCE01977D59400633162 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07AEFCB41977D59400633162 /* MAKDropDownMenuExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AEFCE71977D59400633162 /* Build configuration list for PBXNativeTarget "MAKDropDownMenuExample" */;
+			buildPhases = (
+				07AEFCB11977D59400633162 /* Sources */,
+				07AEFCB21977D59400633162 /* Frameworks */,
+				07AEFCB31977D59400633162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MAKDropDownMenuExample;
+			productName = MAKDropDownMenuExample;
+			productReference = 07AEFCB51977D59400633162 /* MAKDropDownMenuExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07AEFCD51977D59400633162 /* MAKDropDownMenuExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07AEFCEA1977D59400633162 /* Build configuration list for PBXNativeTarget "MAKDropDownMenuExampleTests" */;
+			buildPhases = (
+				07AEFCD21977D59400633162 /* Sources */,
+				07AEFCD31977D59400633162 /* Frameworks */,
+				07AEFCD41977D59400633162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07AEFCDC1977D59400633162 /* PBXTargetDependency */,
+			);
+			name = MAKDropDownMenuExampleTests;
+			productName = MAKDropDownMenuExampleTests;
+			productReference = 07AEFCD61977D59400633162 /* MAKDropDownMenuExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07AEFCAD1977D59400633162 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MAK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = diniska;
+				TargetAttributes = {
+					07AEFCD51977D59400633162 = {
+						TestTargetID = 07AEFCB41977D59400633162;
+					};
+				};
+			};
+			buildConfigurationList = 07AEFCB01977D59400633162 /* Build configuration list for PBXProject "MAKDropDownMenuExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07AEFCAC1977D59400633162;
+			productRefGroup = 07AEFCB61977D59400633162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07AEFCB41977D59400633162 /* MAKDropDownMenuExample */,
+				07AEFCD51977D59400633162 /* MAKDropDownMenuExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07AEFCB31977D59400633162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AEFCD11977D59400633162 /* Images.xcassets in Resources */,
+				07AEFCC31977D59400633162 /* InfoPlist.strings in Resources */,
+				07AEFCCC1977D59400633162 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AEFCD41977D59400633162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AEFCE21977D59400633162 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07AEFCB11977D59400633162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AEFCC91977D59400633162 /* MAKAppDelegate.m in Sources */,
+				07AEFCC51977D59400633162 /* main.m in Sources */,
+				07AEFCCF1977D59400633162 /* MAKViewController.m in Sources */,
+				0768243D1977D5CF00AB43D4 /* MAKDropDownMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07AEFCD21977D59400633162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AEFCE41977D59400633162 /* MAKDropDownMenuExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07AEFCDC1977D59400633162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07AEFCB41977D59400633162 /* MAKDropDownMenuExample */;
+			targetProxy = 07AEFCDB1977D59400633162 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07AEFCC11977D59400633162 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AEFCC21977D59400633162 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07AEFCCA1977D59400633162 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AEFCCB1977D59400633162 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07AEFCE01977D59400633162 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07AEFCE11977D59400633162 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07AEFCE51977D59400633162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07AEFCE61977D59400633162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07AEFCE81977D59400633162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MAKDropDownMenuExample/MAKDropDownMenuExample-Prefix.pch";
+				INFOPLIST_FILE = "MAKDropDownMenuExample/MAKDropDownMenuExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07AEFCE91977D59400633162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MAKDropDownMenuExample/MAKDropDownMenuExample-Prefix.pch";
+				INFOPLIST_FILE = "MAKDropDownMenuExample/MAKDropDownMenuExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		07AEFCEB1977D59400633162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MAKDropDownMenuExample.app/MAKDropDownMenuExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MAKDropDownMenuExample/MAKDropDownMenuExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MAKDropDownMenuExampleTests/MAKDropDownMenuExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		07AEFCEC1977D59400633162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MAKDropDownMenuExample.app/MAKDropDownMenuExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MAKDropDownMenuExample/MAKDropDownMenuExample-Prefix.pch";
+				INFOPLIST_FILE = "MAKDropDownMenuExampleTests/MAKDropDownMenuExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07AEFCB01977D59400633162 /* Build configuration list for PBXProject "MAKDropDownMenuExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AEFCE51977D59400633162 /* Debug */,
+				07AEFCE61977D59400633162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AEFCE71977D59400633162 /* Build configuration list for PBXNativeTarget "MAKDropDownMenuExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AEFCE81977D59400633162 /* Debug */,
+				07AEFCE91977D59400633162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07AEFCEA1977D59400633162 /* Build configuration list for PBXNativeTarget "MAKDropDownMenuExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07AEFCEB1977D59400633162 /* Debug */,
+				07AEFCEC1977D59400633162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07AEFCAD1977D59400633162 /* Project object */;
+}
