@@ -10,8 +10,9 @@
 
 @class MAKDropDownMenu;
 
-@protocol MAKDropDownMenuDelegate
+@protocol MAKDropDownMenuDelegate <NSObject>
 - (void)dropDownMenu:(MAKDropDownMenu *)menu itemDidSelect:(NSUInteger)itemIndex;
+@optional
 - (void)dropDownMenuDidTapOutsideOfItem:(MAKDropDownMenu *)menu;
 @end
 
@@ -22,7 +23,8 @@
 @property (strong, nonatomic) UIColor *tintColor;
 @property (assign, nonatomic) CGFloat separatorHeight;
 @property (assign, nonatomic) UIEdgeInsets buttonsInsets;
+@property (assign, nonatomic, readonly) BOOL isOpen;
 
-- (void)showAnimated:(BOOL)animated;
-- (void)hideAnimated:(BOOL)animated;
+- (void)openAnimated:(BOOL)animated;
+- (void)closeAnimated:(BOOL)animated;
 @end

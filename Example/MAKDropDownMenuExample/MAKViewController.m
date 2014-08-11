@@ -12,7 +12,6 @@
 @interface MAKViewController () <MAKDropDownMenuDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *selectedItem;
 @property (weak, nonatomic) MAKDropDownMenu *menu;
-@property (assign, nonatomic) BOOL isOpen;
 @end
 
 @implementation MAKViewController
@@ -45,7 +44,7 @@
 
 #pragma mark - Buttons events
 - (IBAction)menuButtonDidClick:(id)sender {
-    if (self.isOpen) {
+    if (self.menu.isOpen) {
         [self closeMenu];
     } else {
         [self openMenu];
@@ -53,13 +52,11 @@
 }
 
 - (void)closeMenu {
-    [self.menu hideAnimated:YES];
-    self.isOpen = NO;
+    [self.menu closeAnimated:YES];
 }
 
 - (void)openMenu {
-    [self.menu showAnimated:YES];
-    self.isOpen = YES;
+    [self.menu openAnimated:YES];
 }
 
 #pragma mark - MAKDropDownMenuDelegate

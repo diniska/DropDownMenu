@@ -16,6 +16,7 @@ static const NSTimeInterval kAnimationDuration = .3;
     NSArray *_buttons;
     UIColor *_privateBackgroundColor;
 }
+@synthesize isOpen = _isOpen;
 
 #pragma mark - Setters
 
@@ -42,6 +43,7 @@ static const NSTimeInterval kAnimationDuration = .3;
     _buttonBackgroundColor = [UIColor whiteColor];
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap)];
     [self addGestureRecognizer:recognizer];
+    _isOpen = NO;
 }
 
 - (void)setTitles:(NSArray *)titles {
@@ -94,7 +96,12 @@ static const NSTimeInterval kAnimationDuration = .3;
 
 #pragma mark - Animations
 
-- (void)showAnimated:(BOOL)animated {
+- (void)openAnimated:(BOOL)animated {
+    if (self.isOpen) {
+        return;
+    }
+    _isOpen = YES;
+    
     CGFloat const y = -kButtonHeight;
     for (UIButton *button in _buttons) {
         CGRect buttonFrame = button.frame;
@@ -119,7 +126,12 @@ static const NSTimeInterval kAnimationDuration = .3;
     }
 }
 
-- (void)hideAnimated:(BOOL)animated {
+- (void)closeAnimated:(BOOL)animated {
+    if (!_isOpen) {
+        return;
+    }
+    _isOpen = NO;
+    
     void (^hideBlock)(void) = ^{
         CGFloat const y = -kButtonHeight;
         for (UIButton *button in _buttons) {
@@ -144,6 +156,8 @@ static const NSTimeInterval kAnimationDuration = .3;
 }
 
 - (void)didTap {
-    [self.delegate dropDownMenuDidTapOutsideOfItem:self];
+    if ([self.delegate respondsToSelector:@selector(dropDownMenuDidTapOutsideOfItem:)]) {
+        [self.delegate dropDownMenuDidTapOutsideOfItem:self];
+    }
 }
 @end

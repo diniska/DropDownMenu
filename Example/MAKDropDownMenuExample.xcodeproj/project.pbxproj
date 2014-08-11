@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0768243D1977D5CF00AB43D4 /* MAKDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0768243C1977D5CF00AB43D4 /* MAKDropDownMenu.m */; };
+		071C6BFF1998E8D5005EAD66 /* MAKDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 071C6BFE1998E8D5005EAD66 /* MAKDropDownMenu.m */; };
 		07AEFCB91977D59400633162 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEFCB81977D59400633162 /* Foundation.framework */; };
 		07AEFCBB1977D59400633162 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEFCBA1977D59400633162 /* CoreGraphics.framework */; };
 		07AEFCBD1977D59400633162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEFCBC1977D59400633162 /* UIKit.framework */; };
@@ -35,8 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0768243B1977D5CF00AB43D4 /* MAKDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAKDropDownMenu.h; path = ../../MAKDropDownMenu.h; sourceTree = "<group>"; };
-		0768243C1977D5CF00AB43D4 /* MAKDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAKDropDownMenu.m; path = ../../MAKDropDownMenu.m; sourceTree = "<group>"; };
+		071C6BFD1998E8D5005EAD66 /* MAKDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MAKDropDownMenu.h; path = ../../Classes/MAKDropDownMenu.h; sourceTree = "<group>"; };
+		071C6BFE1998E8D5005EAD66 /* MAKDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MAKDropDownMenu.m; path = ../../Classes/MAKDropDownMenu.m; sourceTree = "<group>"; };
 		07AEFCB51977D59400633162 /* MAKDropDownMenuExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAKDropDownMenuExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07AEFCB81977D59400633162 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07AEFCBA1977D59400633162 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -115,8 +115,8 @@
 		07AEFCBE1977D59400633162 /* MAKDropDownMenuExample */ = {
 			isa = PBXGroup;
 			children = (
-				0768243B1977D5CF00AB43D4 /* MAKDropDownMenu.h */,
-				0768243C1977D5CF00AB43D4 /* MAKDropDownMenu.m */,
+				071C6BFD1998E8D5005EAD66 /* MAKDropDownMenu.h */,
+				071C6BFE1998E8D5005EAD66 /* MAKDropDownMenu.m */,
 				07AEFCC71977D59400633162 /* MAKAppDelegate.h */,
 				07AEFCC81977D59400633162 /* MAKAppDelegate.m */,
 				07AEFCCA1977D59400633162 /* Main.storyboard */,
@@ -258,7 +258,7 @@
 				07AEFCC91977D59400633162 /* MAKAppDelegate.m in Sources */,
 				07AEFCC51977D59400633162 /* main.m in Sources */,
 				07AEFCCF1977D59400633162 /* MAKViewController.m in Sources */,
-				0768243D1977D5CF00AB43D4 /* MAKDropDownMenu.m in Sources */,
+				071C6BFF1998E8D5005EAD66 /* MAKDropDownMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
