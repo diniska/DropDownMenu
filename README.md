@@ -11,5 +11,5 @@ The result is:
 
 ![image alt][2]
 
-[2]: https://raw.githubusercontent.com/diniska/DropDownMenu/master/Example/MAKDropDownMenuExample/example1.gif
+[1]: https://raw.githubusercontent.com/diniska/DropDownMenu/master/Example/MAKDropDownMenuExample/example1.gif
 [2]: https://raw.githubusercontent.com/diniska/DropDownMenu/master/Example/MAKDropDownMenuExample/example1.png
