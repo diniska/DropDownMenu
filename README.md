@@ -7,6 +7,7 @@ Drop down menu for iOS apps
 [![Version](https://img.shields.io/cocoapods/v/MAKDropDownMenu.svg?style=flat)](http://cocoadocs.org/docsets/MAKDropDownMenu)
 
 The result is:
+
 ![image alt][1]
 
 ![image alt][2]
