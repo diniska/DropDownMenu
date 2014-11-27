@@ -61,7 +61,7 @@
 
 #pragma mark - MAKDropDownMenuDelegate
 - (void)dropDownMenu:(MAKDropDownMenu *)menu itemDidSelect:(NSUInteger)itemIndex {
-    self.selectedItem.text = [NSString stringWithFormat:@"%u", (unsigned int)itemIndex];
+    self.selectedItem.text = [NSString stringWithFormat:@"%u", (unsigned int)(itemIndex + 1)];
     [self closeMenu];
 }
 

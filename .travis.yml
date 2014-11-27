@@ -1,0 +1,5 @@
+language: objective-c
+
+xcode_project: Example/MAKDropDownMenuExample.xcodeproj # path to your xcodeproj folder
+xcode_scheme: MAKDropDownMenuExample
+xcode_sdk: iphonesimulator
