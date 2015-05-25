@@ -22,6 +22,8 @@
 		07AEFCDA1977D59400633162 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07AEFCBC1977D59400633162 /* UIKit.framework */; };
 		07AEFCE21977D59400633162 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07AEFCE01977D59400633162 /* InfoPlist.strings */; };
 		07AEFCE41977D59400633162 /* MAKDropDownMenuExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07AEFCE31977D59400633162 /* MAKDropDownMenuExampleTests.m */; };
+		89CB98B41B12E82E00C87160 /* MAKDropDownMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 071C6BFD1998E8D5005EAD66 /* MAKDropDownMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89CB98B51B12E82E00C87160 /* MAKDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 071C6BFE1998E8D5005EAD66 /* MAKDropDownMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		07AEFCDF1977D59400633162 /* MAKDropDownMenuExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MAKDropDownMenuExampleTests-Info.plist"; sourceTree = "<group>"; };
 		07AEFCE11977D59400633162 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		07AEFCE31977D59400633162 /* MAKDropDownMenuExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAKDropDownMenuExampleTests.m; sourceTree = "<group>"; };
+		89CB989B1B12E7F600C87160 /* MAKDropDownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MAKDropDownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89CB989E1B12E7F600C87160 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		89CB98971B12E7F600C87160 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,6 +98,7 @@
 			children = (
 				07AEFCBE1977D59400633162 /* MAKDropDownMenuExample */,
 				07AEFCDD1977D59400633162 /* MAKDropDownMenuExampleTests */,
+				89CB989C1B12E7F600C87160 /* DropDownMenu */,
 				07AEFCB71977D59400633162 /* Frameworks */,
 				07AEFCB61977D59400633162 /* Products */,
 			);
@@ -97,6 +109,7 @@
 			children = (
 				07AEFCB51977D59400633162 /* MAKDropDownMenuExample.app */,
 				07AEFCD61977D59400633162 /* MAKDropDownMenuExampleTests.xctest */,
+				89CB989B1B12E7F600C87160 /* MAKDropDownMenu.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,7 +170,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		89CB989C1B12E7F600C87160 /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				89CB989D1B12E7F600C87160 /* Supporting Files */,
+			);
+			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+		89CB989D1B12E7F600C87160 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89CB989E1B12E7F600C87160 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		89CB98981B12E7F600C87160 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CB98B41B12E82E00C87160 /* MAKDropDownMenu.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		07AEFCB41977D59400633162 /* MAKDropDownMenuExample */ = {
@@ -195,6 +235,24 @@
 			productReference = 07AEFCD61977D59400633162 /* MAKDropDownMenuExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		89CB989A1B12E7F600C87160 /* MAKDropDownMenu Framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89CB98AE1B12E7F600C87160 /* Build configuration list for PBXNativeTarget "MAKDropDownMenu Framework" */;
+			buildPhases = (
+				89CB98961B12E7F600C87160 /* Sources */,
+				89CB98971B12E7F600C87160 /* Frameworks */,
+				89CB98981B12E7F600C87160 /* Headers */,
+				89CB98991B12E7F600C87160 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MAKDropDownMenu Framework";
+			productName = DropDownMenu;
+			productReference = 89CB989B1B12E7F600C87160 /* MAKDropDownMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +265,9 @@
 				TargetAttributes = {
 					07AEFCD51977D59400633162 = {
 						TestTargetID = 07AEFCB41977D59400633162;
+					};
+					89CB989A1B12E7F600C87160 = {
+						CreatedOnToolsVersion = 6.3.2;
 					};
 				};
 			};
@@ -225,6 +286,7 @@
 			targets = (
 				07AEFCB41977D59400633162 /* MAKDropDownMenuExample */,
 				07AEFCD51977D59400633162 /* MAKDropDownMenuExampleTests */,
+				89CB989A1B12E7F600C87160 /* MAKDropDownMenu Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +310,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		89CB98991B12E7F600C87160 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -267,6 +336,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				07AEFCE41977D59400633162 /* MAKDropDownMenuExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89CB98961B12E7F600C87160 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89CB98B51B12E82E00C87160 /* MAKDropDownMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +523,61 @@
 			};
 			name = Release;
 		};
+		89CB98AF1B12E7F600C87160 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DropDownMenu/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MAKDropDownMenu;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		89CB98B01B12E7F600C87160 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = DropDownMenu/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MAKDropDownMenu;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -475,6 +607,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		89CB98AE1B12E7F600C87160 /* Build configuration list for PBXNativeTarget "MAKDropDownMenu Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89CB98AF1B12E7F600C87160 /* Debug */,
+				89CB98B01B12E7F600C87160 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
