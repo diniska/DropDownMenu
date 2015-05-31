@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "89CB989A1B12E7F600C87160"
-               BuildableName = "MAKDropDownMenu Framework.framework"
+               BuildableName = "MAKDropDownMenu.framework"
                BlueprintName = "MAKDropDownMenu Framework"
                ReferencedContainer = "container:MAKDropDownMenuExample.xcodeproj">
             </BuildableReference>
@@ -57,7 +57,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "89CB989A1B12E7F600C87160"
-            BuildableName = "MAKDropDownMenu Framework.framework"
+            BuildableName = "MAKDropDownMenu.framework"
             BlueprintName = "MAKDropDownMenu Framework"
             ReferencedContainer = "container:MAKDropDownMenuExample.xcodeproj">
          </BuildableReference>
@@ -76,7 +76,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "89CB989A1B12E7F600C87160"
-            BuildableName = "MAKDropDownMenu Framework.framework"
+            BuildableName = "MAKDropDownMenu.framework"
             BlueprintName = "MAKDropDownMenu Framework"
             ReferencedContainer = "container:MAKDropDownMenuExample.xcodeproj">
          </BuildableReference>
@@ -94,7 +94,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "89CB989A1B12E7F600C87160"
-            BuildableName = "MAKDropDownMenu Framework.framework"
+            BuildableName = "MAKDropDownMenu.framework"
             BlueprintName = "MAKDropDownMenu Framework"
             ReferencedContainer = "container:MAKDropDownMenuExample.xcodeproj">
          </BuildableReference>

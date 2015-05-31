@@ -17,6 +17,7 @@ static const NSTimeInterval kAnimationDuration = .3;
     UIColor *_privateBackgroundColor;
 }
 @synthesize isOpen = _isOpen;
+@synthesize titles = _titles;
 
 #pragma mark - Setters
 
@@ -47,6 +48,7 @@ static const NSTimeInterval kAnimationDuration = .3;
 }
 
 - (void)setTitles:(NSArray *)titles {
+    _titles = titles;
     for (UIView *button in _buttons) {
         [button removeFromSuperview];
     }
