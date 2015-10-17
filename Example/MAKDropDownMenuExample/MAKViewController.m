@@ -12,6 +12,7 @@
 @interface MAKViewController () <MAKDropDownMenuDelegate>
 @property (weak, nonatomic) IBOutlet UILabel *selectedItem;
 @property (weak, nonatomic) MAKDropDownMenu *menu;
+@property (nonatomic) NSInteger selectedItemId;
 @end
 
 @implementation MAKViewController
@@ -25,11 +26,13 @@
     menu.backgroundColor = [UIColor colorWithWhite:.3f alpha:.5f];
     menu.tintColor = [UIColor colorWithWhite:.1f alpha:1.f];
     menu.buttonBackgroundColor = [UIColor whiteColor];
+    menu.activeButtonBackgroundColor = [UIColor lightGrayColor];
     menu.titles = @[@"Item 1", @"Item 2", @"Item 3", @"Item 4", @"Item 5", @"Item 6", @"Item 7"];
     menu.separatorHeight = 1 / [UIScreen mainScreen].scale;
     menu.layer.masksToBounds = YES;
     menu.buttonsInsets = UIEdgeInsetsMake(1 / [UIScreen mainScreen].scale, 0, 0, 0);
     menu.delegate = self;
+    _selectedItemId = -1;
     
     //adding menu to navigation view
     [self.navigationController.view addSubview:menu];
@@ -56,12 +59,13 @@
 }
 
 - (void)openMenu {
-    [self.menu openAnimated:YES];
+    [self.menu openAnimated:YES withActiveButtonId:_selectedItemId];
 }
 
 #pragma mark - MAKDropDownMenuDelegate
 - (void)dropDownMenu:(MAKDropDownMenu *)menu itemDidSelect:(NSUInteger)itemIndex {
     self.selectedItem.text = [NSString stringWithFormat:@"%u", (unsigned int)(itemIndex + 1)];
+    _selectedItemId = itemIndex;
     [self closeMenu];
 }
 

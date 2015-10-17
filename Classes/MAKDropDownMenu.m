@@ -13,8 +13,9 @@ static const CGFloat kButtonHeight = 44;
 static const NSTimeInterval kAnimationDuration = .3;
 
 @implementation MAKDropDownMenu {
-    NSArray *_buttons;
-    UIColor *_privateBackgroundColor;
+    NSArray   *_buttons;
+    UIColor   *_privateBackgroundColor;
+    NSInteger _activeButtonId;
 }
 @synthesize isOpen = _isOpen;
 
@@ -41,6 +42,8 @@ static const NSTimeInterval kAnimationDuration = .3;
     [self updateBackgroundColor];
     self.tintColor = [UIColor blackColor];
     _buttonBackgroundColor = [UIColor whiteColor];
+    _activeButtonBackgroundColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
+    _activeButtonId = -1;
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap)];
     [self addGestureRecognizer:recognizer];
     _isOpen = NO;
@@ -67,10 +70,25 @@ static const NSTimeInterval kAnimationDuration = .3;
 
 - (void)setButtonBackgroundColor:(UIColor *)buttonBackgroundColor {
     _buttonBackgroundColor = buttonBackgroundColor;
-    dispatch_apply(_buttons.count, dispatch_get_main_queue(), ^(size_t index) {
+    [self updateBackgroundColor];
+}
+
+- (void)setActiveButtonBackgroundColor:(UIColor *)activeButtonBackgroundColor {
+    _activeButtonBackgroundColor = activeButtonBackgroundColor;
+    [self updateButtonBackgroundColor];
+}
+
+-(void)updateButtonBackgroundColor {
+    //dispatch_apply(_buttons.count, dispatch_get_main_queue(), ^(size_t index) {
+    for (int index = 0; index < _buttons.count; index++) {
         UIButton *button = _buttons[index];
-        [button setBackgroundColor:buttonBackgroundColor];
-    });
+        if (_activeButtonId == index) {
+            [button setBackgroundColor:_activeButtonBackgroundColor];
+        } else {
+            [button setBackgroundColor:_buttonBackgroundColor];
+        }
+    }
+    //});
 }
 
 - (void)setTintColor:(UIColor *)tintColor {
@@ -101,6 +119,7 @@ static const NSTimeInterval kAnimationDuration = .3;
         return;
     }
     _isOpen = YES;
+    _activeButtonId = -1;
     
     CGFloat const y = -kButtonHeight;
     for (UIButton *button in _buttons) {
@@ -124,6 +143,12 @@ static const NSTimeInterval kAnimationDuration = .3;
     } else {
         showblock();
     }
+}
+
+- (void)openAnimated:(BOOL)animated withActiveButtonId:(NSInteger) buttonId {
+    _activeButtonId = buttonId;
+    [self updateButtonBackgroundColor];
+    [self openAnimated:animated];
 }
 
 - (void)closeAnimated:(BOOL)animated {

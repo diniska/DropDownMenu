@@ -20,11 +20,13 @@
 @property (strong, nonatomic) NSArray *titles;
 @property (weak, nonatomic) id<MAKDropDownMenuDelegate> delegate;
 @property (strong, nonatomic) UIColor *buttonBackgroundColor;
+@property (strong, nonatomic) UIColor *activeButtonBackgroundColor;
 @property (strong, nonatomic) UIColor *tintColor;
 @property (assign, nonatomic) CGFloat separatorHeight;
 @property (assign, nonatomic) UIEdgeInsets buttonsInsets;
 @property (assign, nonatomic, readonly) BOOL isOpen;
 
 - (void)openAnimated:(BOOL)animated;
+- (void)openAnimated:(BOOL)animated withActiveButtonId:(NSInteger) buttonId;
 - (void)closeAnimated:(BOOL)animated;
 @end
