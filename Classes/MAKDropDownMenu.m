@@ -43,7 +43,7 @@ static const NSTimeInterval kAnimationDuration = .3;
     self.tintColor = [UIColor blackColor];
     _buttonBackgroundColor = [UIColor whiteColor];
     _activeButtonBackgroundColor = [UIColor colorWithWhite:0.9f alpha:1.0f];
-    _activeButtonId = 4;
+    _activeButtonId = -1;
     UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap)];
     [self addGestureRecognizer:recognizer];
     _isOpen = NO;
@@ -70,7 +70,7 @@ static const NSTimeInterval kAnimationDuration = .3;
 
 - (void)setButtonBackgroundColor:(UIColor *)buttonBackgroundColor {
     _buttonBackgroundColor = buttonBackgroundColor;
-    [self updateButtonBackgroundColor];
+    [self updateBackgroundColor];
 }
 
 - (void)setActiveButtonBackgroundColor:(UIColor *)activeButtonBackgroundColor {
@@ -79,6 +79,7 @@ static const NSTimeInterval kAnimationDuration = .3;
 }
 
 -(void)updateButtonBackgroundColor {
+    //dispatch_apply(_buttons.count, dispatch_get_main_queue(), ^(size_t index) {
     for (int index = 0; index < _buttons.count; index++) {
         UIButton *button = _buttons[index];
         if (_activeButtonId == index) {
@@ -87,6 +88,7 @@ static const NSTimeInterval kAnimationDuration = .3;
             [button setBackgroundColor:_buttonBackgroundColor];
         }
     }
+    //});
 }
 
 - (void)setTintColor:(UIColor *)tintColor {
@@ -117,6 +119,7 @@ static const NSTimeInterval kAnimationDuration = .3;
         return;
     }
     _isOpen = YES;
+    _activeButtonId = -1;
     
     CGFloat const y = -kButtonHeight;
     for (UIButton *button in _buttons) {
