@@ -79,7 +79,6 @@ static const NSTimeInterval kAnimationDuration = .3;
 }
 
 -(void)updateButtonBackgroundColor {
-    //dispatch_apply(_buttons.count, dispatch_get_main_queue(), ^(size_t index) {
     for (int index = 0; index < _buttons.count; index++) {
         UIButton *button = _buttons[index];
         if (_activeButtonId == index) {
@@ -88,7 +87,6 @@ static const NSTimeInterval kAnimationDuration = .3;
             [button setBackgroundColor:_buttonBackgroundColor];
         }
     }
-    //});
 }
 
 - (void)setTintColor:(UIColor *)tintColor {
